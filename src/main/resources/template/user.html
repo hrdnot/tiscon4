@@ -45,7 +45,12 @@
                                 <td>
                                     <p>例：ＴＩＳ　太郎</p>
                                     <div class="field" th:classappend="${errors.hasError('kanjiName')} ? 'error'">
-                                        <input type="text" name="kanjiName" th:value="${form.kanjiName}"/>
+                                        <div style="display:inline-flex">
+                                            <p>姓</p>
+                                        <input type="text" name="kanjiName" th:value="${form.kanjiName}" size="15"/>
+                                            <p> 名</p>
+                                            <input type="text" name="kanjiName" th:value="${form.kanjiName}" size="15"/>
+                                            </div>
                                         <p th:if="${errors.hasError('kanjiName')}"
                                            th:text="${errors.getMessage('kanjiName')}" class="error-message">
                                         </p>
@@ -60,7 +65,12 @@
                                 <td>
                                     <p>例：ティーアイエス　タロウ</p>
                                     <div class="field" th:classappend="${errors.hasError('kanaName')} ? 'error'">
-                                        <input type="text" name="kanaName" th:value="${form.kanaName}"/>
+                                        <div style="display:inline-flex">
+                                            <p>姓</p>
+                                        <input type="text" name="kanaName" th:value="${form.kanaName}" size="15"/>
+                                            <p>名</p>
+                                            <input type="text" name="kanaName" th:value="${form.kanaName}" size="15"/>
+                                        </div>
                                         <p th:if="${errors.hasError('kanaName')}"
                                            th:text="${errors.getMessage('kanaName')}" class="error-message">
                                         </p>
@@ -75,7 +85,12 @@
                                 <td>
                                     <p>例：TIS TAROU</p>
                                     <div class="field" th:classappend="${errors.hasError('alphabetName')} ? 'error'">
-                                        <input type="text" name="alphabetName" th:value="${form.alphabetName}"/>
+                                        <div style="display:inline-flex">
+                                            <p>姓</p>
+                                        <input type="text" name="alphabetName" th:value="${form.alphabetName}" size="15"/>
+                                            <p> 名</p>
+                                            <input type="text" name="alphabetName" th:value="${form.alphabetName}" size="15"/>
+                                        </div>
                                         <p th:if="${errors.hasError('alphabetName')}"
                                            th:text="${errors.getMessage('alphabetName')}" class="error-message">
                                         </p>
@@ -109,7 +124,14 @@
                                 <td>
                                     <p>例：1990/01/01</p>
                                     <div class="field" th:classappend="${errors.hasError('dateOfBirth')} ? 'error'">
-                                        <input type="text" name="dateOfBirth" th:value="${form.dateOfBirth}"/>
+                                        <div style="display:inline-flex">
+                                        <input type="text" name="dateOfBirth" th:value="${form.dateOfBirth}" size="8"/>
+                                            <p>年 </p>
+                                            <input type="text" name="dateOfBirth" th:value="${form.dateOfBirth}" size="8"/>
+                                            <p>月 </p>
+                                            <input type="text" name="dateOfBirth" th:value="${form.dateOfBirth}" size="8"/>
+                                            <p>日</p>
+                                        </div>
                                         <p th:if="${errors.hasError('dateOfBirth')}"
                                            th:text="${errors.getMessage('dateOfBirth')}" class="error-message">
                                         </p>
@@ -124,7 +146,11 @@
                                 <td>
                                     <p>例：123-4567</p>
                                     <div class="field" th:classappend="${errors.hasError('zipCode')} ? 'error'">
-                                        <input type="text" class="zipcode" name="zipCode" th:value="${form.zipCode}"/>
+                                        <div style="display:inline-flex">
+                                        <input type="text" class="zipcode" name="zipCode" th:value="${form.zipCode}" size="15"/>
+                                            <p> - </p>
+                                            <input type="text" class="zipcode" name="zipCode" th:value="${form.zipCode}" size="15"/>
+                                        </div>
                                         <p th:if="${errors.hasError('zipCode')}"
                                            th:text="${errors.getMessage('zipCode')}" class="error-message">
                                         </p>
@@ -154,7 +180,13 @@
                                 <td>
                                     <p>例：00-1111-2222</p>
                                     <div class="field" th:classappend="${errors.hasError('homePhoneNumber')} ? 'error'">
-                                        <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}"/>
+                                        <div style="display:inline-flex">
+                                        <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}" size="10"/>
+                                            <p> - </p>
+                                            <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}" size="10"/>
+                                            <p> - </p>
+                                            <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}" size="10"/>
+                                        </div>
                                         <p th:if="${errors.hasError('homePhoneNumber')}"
                                            th:text="${errors.getMessage('homePhoneNumber')}" class="error-message">
                                         </p>
@@ -170,8 +202,16 @@
                                     <p>例：080-0000-0000</p>
                                     <div class="field"
                                          th:classappend="${errors.hasError('mobilePhoneNumber')} ? 'error'">
+                                        <div style="display:inline-flex">
                                         <input type="text" name="mobilePhoneNumber"
-                                               th:value="${form.mobilePhoneNumber}"/>
+                                               th:value="${form.mobilePhoneNumber}" size="10"/>
+                                            <p> - </p>
+                                            <input type="text" name="mobilePhoneNumber"
+                                                   th:value="${form.mobilePhoneNumber}" size="10"/>
+                                            <p> - </p>
+                                            <input type="text" name="mobilePhoneNumber"
+                                                   th:value="${form.mobilePhoneNumber}" size="10"/>
+                                        </div>
                                         <p th:if="${errors.hasError('mobilePhoneNumber')}"
                                            th:text="${errors.getMessage('mobilePhoneNumber')}" class="error-message">
                                         </p>
