@@ -10,6 +10,11 @@ body {
     padding-top: 80px;
 }
 
+#toppage-title{
+    font-size: 6rem;
+    line-height: 4.3rem;
+}
+
 a.logo {
     font-family: 'Exo', sans-serif;
     color: #f33;
