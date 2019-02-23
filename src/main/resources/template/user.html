@@ -108,9 +108,9 @@
                                 </td>
                                 <td>
                                     <form>
-                                        <select name="kibun">
-                                            <option value="otoko">男性</option>
-                                            <option value="onna">女性</option>
+                                        <select name="gender">
+                                            <option value="male">男性</option>
+                                            <option value="female">女性</option>
                                         </select></form>
                                     <p th:if="${errors.hasError('gender')}" th:text="${errors.getMessage('gender')}"
                                        class="error-message">
