@@ -47,9 +47,27 @@ public class Tiscon4DomainBean {
     @YYYYMMDD()
     private String dateOfBirth;
 
+    /** 年 */
+    //@year(regexp = "^\\d{4}$")
+    @Length(min = 4, max = 4)
+    private String year;
+
+    /** 月 */
+    //@year(regexp = "^\\d{4}$")
+    @Length(min = 2, max = 2)
+    private String month;
+
+    /** 日 */
+    //@year(regexp = "^\\d{4}$")
+    @Length(min = 2, max = 2)
+    private String day;
+
     /** 郵便番号 */
-    @ZipNumber
-    private String zipCode;
+    @Length(min = 3, max = 3)
+    private String zipCode1;
+
+    @Length(min = 4, max = 4)
+    private String zipCode2;
 
     /** 住所 */
     @SystemChar(charsetDef = "全角文字", message = "{domain.illegalCharacter}")
@@ -60,9 +78,27 @@ public class Tiscon4DomainBean {
     @JapaneseTelNumber()
     private String homePhoneNumber;
 
+    @Length(min = 2, max = 4)
+    private String homePhoneNumber1;
+
+    @Length(min = 2, max = 4)
+    private String homePhoneNumber2;
+
+    @Length(min = 4, max = 4)
+    private String homePhoneNumber3;
+
     /** 携帯電話番号 */
     @JapaneseTelNumber()
     private String mobilePhoneNumber;
+
+    @Length(min = 3, max = 3)
+    private String mobilePhoneNumber1;
+
+    @Length(min = 4, max = 4)
+    private String mobilePhoneNumber2;
+
+    @Length(min = 4, max = 4)
+    private String mobilePhoneNumber3;
 
     /** メールアドレス */
     @MailAddress()

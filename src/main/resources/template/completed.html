@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>申し込み完了</title>
+    <title>TISCON-保険申し込み完了</title>
 
     <link rel="stylesheet" th:href="@{http://fonts.googleapis.com/css?family=Exo:900}"/>
     <link rel="stylesheet"
           th:href="@{https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css}"/>
     <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 
 <nav th:insert="header.html :: header"></nav>
 
 <div class="full height image">
-    <div class="ui main container">
+    <div class="ui main container" id="completed-conteiner">
         <div class="ui information container">
             <div class="ui middle center aligned grid">
                 <div class="center column">
@@ -29,6 +31,9 @@
             </div>
         </div>
     </div>
+</div>
+<div class="p-copyright">
+    <p class="copyright">© TISCON INSURANCE All rights reserved.</p>
 </div>
 </body>
 </html>

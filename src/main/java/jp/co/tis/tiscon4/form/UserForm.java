@@ -16,17 +16,29 @@ public class UserForm implements Serializable {
     /** 漢字氏名 */
     @Required
     @Domain("kanjiName")
-    private String kanjiName;
+    private String kanjiName1;
+
+    @Required
+    @Domain("kanjiName")
+    private String kanjiName2;
 
     /** カナ氏名 */
     @Required
     @Domain("kanaName")
-    private String kanaName;
+    private String kanaName1;
+
+    @Required
+    @Domain("kanaName")
+    private String kanaName2;
 
     /** 英字氏名 */
     @Required
     @Domain("alphabetName")
-    private String alphabetName;
+    private String alphabetName1;
+
+    @Required
+    @Domain("alphabetName")
+    private String alphabetName2;
 
     /** 性別 */
     @Required
@@ -35,13 +47,25 @@ public class UserForm implements Serializable {
 
     /** 生年月日 */
     @Required
-    @Domain("dateOfBirth")
-    private String dateOfBirth;
+    @Domain("year")
+    private String dateOfBirth1;
+
+    @Required
+    @Domain("month")
+    private String dateOfBirth2;
+
+    @Required
+    @Domain("day")
+    private String dateOfBirth3;
 
     /** 郵便番号 */
     @Required
-    @Domain("zipCode")
-    private String zipCode;
+    @Domain("zipCode1")
+    private String zipCode1;
+
+    @Required
+    @Domain("zipCode2")
+    private String zipCode2;
 
     /** 住所 */
     @Required
@@ -50,13 +74,29 @@ public class UserForm implements Serializable {
 
     /** 自宅電話番号 */
     @Required
-    @Domain("homePhoneNumber")
-    private String homePhoneNumber;
+    @Domain("homePhoneNumber1")
+    private String homePhoneNumber1;
+
+    @Required
+    @Domain("homePhoneNumber2")
+    private String homePhoneNumber2;
+
+     @Required
+     @Domain("homePhoneNumber3")
+     private String homePhoneNumber3;
 
     /** 携帯電話番号 */
     @Required
-    @Domain("mobilePhoneNumber")
-    private String mobilePhoneNumber;
+    @Domain("mobilePhoneNumber1")
+    private String mobilePhoneNumber1;
+
+    @Required
+    @Domain("mobilePhoneNumber2")
+    private String mobilePhoneNumber2;
+
+    @Required
+    @Domain("mobilePhoneNumber3")
+    private String mobilePhoneNumber3;
 
     /** メールアドレス */
     @Required
@@ -91,36 +131,78 @@ public class UserForm implements Serializable {
     @Domain("medicalHistory")
     private String medicalHistory;
 
-    public String getKanjiName() {
-        return kanjiName;
+    public String getKanjiName1() {
+        return kanjiName1;
     }
 
-    public void setKanjiName(String kanjiName) {
-        this.kanjiName = kanjiName;
+
+    public void setKanjiName1(String kanjiName) {
+        this.kanjiName1 = kanjiName;
     }
 
-    public String getKanaName() {
-        return kanaName;
+    public String getKanjiName2() {
+        return kanjiName2;
+    }                                                                    
+
+
+    public void setKanjiName2(String kanjiName) {
+        this.kanjiName2 = kanjiName;
     }
 
-    public void setKanaName(String kanaName) {
-        this.kanaName = kanaName;
+    public String getKanaName1() {
+        return kanaName1;
     }
 
-    public String getAlphabetName() {
-        return alphabetName;
+    public void setKanaName1(String kanaName) {
+        this.kanaName1 = kanaName;
     }
 
-    public void setAlphabetName(String alphabetName) {
-        this.alphabetName = alphabetName;
+    public String getKanaName2() {
+        return kanaName2;
     }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
+    public void setKanaName2(String kanaName) {
+        this.kanaName2 = kanaName;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public String getAlphabetName1() {
+        return alphabetName1;
+    }
+
+    public void setAlphabetName1(String alphabetName) {
+        this.alphabetName1 = alphabetName;
+    }
+
+    public String getAlphabetName2() {
+        return alphabetName2;
+    }
+
+    public void setAlphabetName2(String alphabetName) {
+        this.alphabetName2 = alphabetName;
+    }
+
+    public String getDateOfBirth1() {
+        return dateOfBirth1;
+    }
+
+    public void setDateOfBirth1(String dateOfBirth) {
+        this.dateOfBirth1 = dateOfBirth;
+    }
+
+    public String getDateOfBirth2() {
+        return dateOfBirth2;
+    }
+
+    public void setDateOfBirth2(String dateOfBirth) {
+        this.dateOfBirth2 = dateOfBirth;
+    }
+
+    public String getDateOfBirth3() {
+        return dateOfBirth3;
+    }
+
+    public void setDateOfBirth3(String dateOfBirth) {
+        this.dateOfBirth3 = dateOfBirth;
     }
 
     public String getGender() {
@@ -131,12 +213,20 @@ public class UserForm implements Serializable {
         this.gender = gender;
     }
 
-    public String getZipCode() {
-        return zipCode;
+    public String getZipCode1() {
+        return zipCode1;
     }
 
-    public void setZipCode(String zipCode) {
-        this.zipCode = zipCode;
+    public void setZipCode1(String zipCode) {
+        this.zipCode1 = zipCode;
+    }
+
+    public String getZipCode2() {
+        return zipCode2;
+    }
+
+    public void setZipCode2(String zipCode) {
+        this.zipCode2 = zipCode;
     }
 
     public String getAddress() {
@@ -147,21 +237,54 @@ public class UserForm implements Serializable {
         this.address = address;
     }
 
-    public String getHomePhoneNumber() {
-        return homePhoneNumber;
+    public String getHomePhoneNumber1() {
+        return homePhoneNumber1;
     }
 
-    public void setHomePhoneNumber(String homePhoneNumber) {
-        this.homePhoneNumber = homePhoneNumber;
+    public void setHomePhoneNumber1(String homePhoneNumber) {
+        this.homePhoneNumber1 = homePhoneNumber;
     }
 
-    public String getMobilePhoneNumber() {
-        return mobilePhoneNumber;
+    public String getHomePhoneNumber2() {
+        return homePhoneNumber2;
     }
 
-    public void setMobilePhoneNumber(String mobilePhoneNumber) {
-        this.mobilePhoneNumber = mobilePhoneNumber;
+    public void setHomePhoneNumber2(String homePhoneNumber) {
+        this.homePhoneNumber2 = homePhoneNumber;
     }
+
+    public String getHomePhoneNumber3() {
+        return homePhoneNumber3;
+    }
+
+    public void setHomePhoneNumber3(String homePhoneNumber) {
+        this.homePhoneNumber3 = homePhoneNumber;
+    }
+
+    public String getMobilePhoneNumber1() {
+        return mobilePhoneNumber1;
+    }
+
+    public void setMobilePhoneNumber1(String mobilePhoneNumber) {
+        this.mobilePhoneNumber1 = mobilePhoneNumber;
+    }
+
+    public String getMobilePhoneNumber2() {
+        return mobilePhoneNumber2;
+    }
+
+    public void setMobilePhoneNumber2(String mobilePhoneNumber) {
+        this.mobilePhoneNumber2 = mobilePhoneNumber;
+    }
+
+    public String getMobilePhoneNumber3() {
+        return mobilePhoneNumber3;
+    }
+
+    public void setMobilePhoneNumber3(String mobilePhoneNumber) {
+        this.mobilePhoneNumber3 = mobilePhoneNumber;
+    }
+
 
     public String getEmailAddress() {
         return emailAddress;
