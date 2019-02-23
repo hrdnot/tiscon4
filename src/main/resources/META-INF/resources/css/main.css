@@ -7,12 +7,22 @@ body {
 }
 
 .ui.main.container {
-    padding-top: 80px;
+    padding-top: 50px;
+}
+
+.top30{
+    top: 40px;
+}
+
+.div-hover:hover{
+    background-color: #CCCCCC;
 }
 
 #toppage-title{
     font-size: 6rem;
     line-height: 4.3rem;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
 }
 
 a.logo {
@@ -21,8 +31,10 @@ a.logo {
 }
 
 .bland-message {
-    font-family: "Sawarabi Mincho";
+    font-family: 'Exo', sans-serif;
+    font-weight: 550;
     font-size: 36px;
+    margin-top: 30px;
 }
 
 div.center.column {
@@ -181,5 +193,90 @@ ul.label {
 
 td {
     width: 400px;
+}
+
+.header-height{
+    height: 80px;
+    float: right;
+    margin-left: auto;
+}
+
+.main-conteiner-padding{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.header-a{
+    font-size: 16px;
+}
+
+.header-a:hover{
+    background-color: #CCCCCC;
+}
+
+.toppage-icon{
+    line-height: 85px;
+    font-size: 18px;
+    padding-left: 40px;
+    vertical-aline: middle;
+}
+
+.p-copyright{
+    height: 50px;
+    width: 100%;
+    background: gray;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+#acceptance-conteiner{
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+#user-conteiner{
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+#job-conteiner{
+
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+#completed-conteiner{
+    padding-top: 120px;
+}
+
+.header-flex;{
+    display: flex;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.AI-chat{
+    background-color: gray;
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    text-align: center;
+}
+
+
+@media screen and(max-width: 900px){
+    .header-a{
+        font-size: 10px!important;
+    }
 }
 
