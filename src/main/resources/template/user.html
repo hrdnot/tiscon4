@@ -101,15 +101,14 @@
                                 <td>
                                     <label>性別</label>
                                     <p style="color:red;">＊</p>
+
                                 </td>
                                 <td>
-                                    <div th:each="item : ${genderTypes}" class="field"
-                                         th:classappend="${errors.hasError('gender')} ? 'error'">
-                                        <input type="radio" name="gender" th:value="${item.code}"
-                                               th:text="${item.label}" th:field="*{gender}"
-                                               th:checked="${form.gender}==${item.code}"/>
-
-                                    </div>
+                                    <form>
+                                        <select name="kibun">
+                                            <option value="otoko">男性</option>
+                                            <option value="onna">女性</option>
+                                        </select></form>
                                     <p th:if="${errors.hasError('gender')}" th:text="${errors.getMessage('gender')}"
                                        class="error-message">
                                     </p>
