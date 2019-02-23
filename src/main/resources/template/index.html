@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:with="datetime=${#calendars.format(#calendars.createNow(),'yyyyMMddHHmmssSSS')}">
     <script th:src="@{/js/dummy.js}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <link rel="stylesheet" th:href="@{/css/engineer.test.1.css(time=${datetime})}"/>
 
@@ -11,8 +12,6 @@
     <link rel="stylesheet" th:href="@{/css/main.css}">
     <link rel="shortcut icon" href="/img/favicon.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>TISCON保険-申し込み</title>
 </head>
 <body>
@@ -26,42 +25,62 @@
         <div class="ui information container center aligned">
             <h1 class="ui header" id="toppage-title">tiscon insurance</h1>
             <h2 class="bland-message">多彩なチカラが<br>広げる未来。</h2>
+            <h3 class="3types">選べる3種類の保険タイプ</h3>
+            <div class="AI-chat-div">
+                <p class="AI-chat-sp">AIとのチャット<br>画面を開く</p>
+            </div>
             <div class="index-block">
-                <div class="index-icon div-hover" style="border:solid 3px #4B610B;">
-                    <a href="/action/order/accept?insuranceType=treat">
-                        <img src="/img/icon_treat.png">
-                        <p class="index-text" style="top:40px;">★病気、ケガに備える</p>
-                        <a href="/action/order/accept?insuranceType=treat" class="index-button top30"
-                           style="top:90px; background-color: #4B610B;">
-                            申し込み
+                <div class="sp-flexbox">
+                    <div class="index-icon div-hover" style="border:solid 3px #4B610B;">
+                        <a href="/action/order/accept?insuranceType=treat">
+                            <img class="hoken-icon" src="/img/icon_treat.png">
+                            <p class="index-text" style="top:40px;">★病気、ケガに備える</p>
+                            <a href="/action/order/accept?insuranceType=treat" class="index-button top30"
+                               style="top:90px; background-color: #4B610B;">
+                                申し込み
+                            </a>
                         </a>
-                    </a>
+                    </div>
+
+                    <div class="sp-desc">
+                        <p>保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります</p>
+                    </div>
                 </div>
 
-                <div class="index-icon div-hover" style="border:solid 3px #B40404;">
-                <a href="/action/order/accept?insuranceType=treatLady">
-                    <img src="/img/icon_treatLady.png">
-                    <p class="index-text" style="top:10px;">★病気、ケガに備える</p>
-                    <p class="index-text" style="top:20px;">★女性特有の病気への特約つき</p>
-                    <a href="/action/order/accept?insuranceType=treatLady" class="index-button"
-                       style="top:42px; background-color: #B40404;">
-                        申し込み
-                    </a>
-                </a>
-                </div>
-
-
-                <div class="index-icon div-hover" style="border:solid 3px #0174DF;">
-                    <a href="/action/order/accept?insuranceType=future">
-                        <img src="/img/icon_future.png">
-                        <p class="index-text" style="top:30px;">★がんに備える</p>
-                        <a href="/action/order/accept?insuranceType=future" class="index-button"
-                           style="top:80px; background-color: #0174DF;">
-                            申し込み
+                <div class="sp-flexbox">
+                    <div class="index-icon div-hover" id="treat-lady" style="border:solid 3px #B40404;">
+                        <a href="/action/order/accept?insuranceType=treatLady">
+                            <img class="hoken-icon lady-icon" src="/img/icon_treatLady.png">
+                            <p class="index-text lady-text" id="byouki-lady">★病気、ケガに備える</p>
+                            <p class="index-text lady-text" id="tokuyaku-lady">★女性特有の病気への特約つき</p>
+                            <a href="/action/order/accept?insuranceType=treatLady" class="index-button" id="lady-button"
+                               style="background-color: #B40404;">
+                                申し込み
+                            </a>
                         </a>
-                     </a>
+                    </div>
+
+                    <div class="sp-desc">
+                        <p>保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります</p>
+                    </div>
                 </div>
 
+                <div class="sp-flexbox">
+                    <div class="index-icon div-hover" style="border:solid 3px #0174DF;">
+                        <a href="/action/order/accept?insuranceType=future">
+                            <img class="hoken-icon" src="/img/icon_future.png">
+                            <p class="index-text" style="top:30px;">★がんに備える</p>
+                            <a href="/action/order/accept?insuranceType=future" class="index-button gan-button"
+                               style="top:80px; background-color: #0174DF;">
+                                申し込み
+                            </a>
+                         </a>
+                    </div>
+
+                    <div class="sp-desc">
+                        <p>保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります保険の説明が入ります</p>
+                    </div>
+                </div>
             </div>
             </div>
 
@@ -75,7 +94,7 @@
 </div>
 </div>
 <div class="p-copyright">
-    <p class="copyright">© TISCON INSURANCE All rights reserved.</p>
+    <p class="copyright">© TISCON INSURANCE  All rights reserved.</p>
 </div>
 </body>
 </html>

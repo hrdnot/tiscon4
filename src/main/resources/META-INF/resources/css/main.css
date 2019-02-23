@@ -263,6 +263,14 @@ td {
     margin-right: 4%;
 }
 
+#lady-button{
+    top:42px;
+}
+
+#byouki-lady{
+    top: 10px;
+}
+
 .AI-chat{
     background-color: gray;
     height: 200px;
@@ -273,10 +281,287 @@ td {
     text-align: center;
 }
 
+#tokuyaku-lady{
+    top: 20px;
+}
 
-@media screen and(max-width: 900px){
-    .header-a{
-        font-size: 10px!important;
+.AI-chat-div{
+    display: none;
+    background-color: gray;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    right: 20%;
+}
+
+.AI-chat-sp{
+    color: white;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.none1200{
+    float: right;
+    padding-top: 28px;
+}
+
+.icon-flex{
+    display: flex;
+}
+
+.3types{
+    display: none!important;
+    text-align: center;
+}
+
+.sp-desc{
+    display: none;
+}
+
+
+@media screen and (max-width: 1370px){
+    .totop{
+        display: none!important;
     }
 }
 
+@media screen and (max-width: 1280px){
+    .AI-chat{
+        display: none;
+    }
+    .AI-chat-div{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .none1200{
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .header-a{
+        font-size: 14px;
+    }
+    .header-height{
+        height: 60px;
+    }
+    .toppage-icon{
+        line-height: 0;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 930px){
+    .index-block{
+        display: block!important;
+        margin: 0 auto;
+    }
+
+    .sp-flexbox{
+        display: flex;
+    }
+
+    .whatquestion{
+        display: none!important;
+    }
+
+    .AI-chat-div{
+        right: 13%;
+    }
+
+    .sp-desc{
+        display: block!important;
+    }
+
+    .index-icon{
+        width: 30%;
+    }
+
+    .sp-desc{
+        padding-top: 35px;
+        width: 43%;
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .sp-desc{
+        width: 43%;
+        margin-left: 4%;
+    }
+}
+
+@media screen and (max-width: 675px){
+    3types{
+        display: block;
+    }
+
+    .header-tele{
+        display: none!important;
+    }
+
+    .sp-desc{
+        width: 30%;
+        margin-left: 4%;
+    }
+}
+
+@media screen and (max-width: 664px){
+    .AI-chat-div{
+        top: 40%;
+        right: 8%;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .sp-desc{
+        display: none!important;
+    }
+
+    .index-icon{
+        width: 56%;
+        height: 200px;
+        display: flex;
+    }
+
+    .hoken-icon{
+        width: 50%;
+        padding-top: 30px;
+    }
+
+    .lady-icon{
+        margin-left: -66px;
+    }
+
+    .index-text{
+        float: right;
+    }
+
+
+    .index-button{
+        float: right;
+        height: 40px;
+        margin-left: -138px;
+    }
+
+    #treat-lady{
+        height: 240px;
+    }
+
+    .gan-button{
+        margin-left: -100px;
+    }
+
+    #lady-button{
+        top: 125px;
+        left: -59px;
+        width: 110px;
+    }
+
+    #byouki-lady{
+        top: 50px;
+        left: -89px;
+    }
+
+    #tokuyaku-lady{
+        left: -34px;
+        top: -110px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .AI-chat-div{
+        right: 6%;
+        width: 90px;
+        height: 90px;
+    }
+
+    .AI-chat-sp{
+        font-size: 10px;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    width
+}
+
+@media screen and (max-width: 500px){
+    .AI-chat-div{
+        top: 45%;
+        font-size: 9px;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 465px){
+    #toppage-title{
+        font-size: 5rem;
+    }
+
+    .header-a{
+        font-size: 12px;
+    }
+    .toppage-icon{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 380px){
+   .AI-chat-div{
+       top: 40%;
+       font-size: 9px;
+       width: 70px;
+       height: 70px;
+   }
+
+   .AI-chat-sp{
+        padding-top: 23px;
+        font-size: 8px;
+   }
+
+    .hoken-icon{
+        width: 42%;
+        margin-left: -45px;
+    }
+
+    .index-box{
+        width: 820px;
+    }
+
+    .index-icon{
+        height: 170px;
+    }
+
+    #treat-lady{
+        height: 180px;
+    }
+
+    .index-button{
+        width: 115px;
+    }
+
+    #tokuyaku-lady{
+        width: 150px;
+        word-wrap: break-word;
+    }
+
+    #byouki-lady{
+        top: 57px;
+        left: -46px;
+    }
+   .sp-flexbox{
+        width: 73%;
+   }
+
+   #lady-button{
+        width: 120px;
+        left: -32px;
+        top: 100px;
+   }
+}
